@@ -1,5 +1,6 @@
-
-const $date = new Date();
+// This gives me the timestamp for the license.
+const Ndate = new Date();
+const Nyear = Ndate.getFullYear();
 
 function renderLicenseBadge(License) {
   if(License !== "Unlicense") {
@@ -18,12 +19,20 @@ function renderLicenseLink(License) {
 }
 
 //function that returns the license section of README. If there is no license, return an empty string
-function renderLicenseSection(License) {
+function renderLicenseSection(License, Name) {
   if(License !== "Unlicense"){
     return `## License
-    Copyright (c) ${$date} ${Name}. For more information about licenses, please look at this link ${renderLicenseBadge(License)}`;
+    Copyright (c) ${Nyear} ${Name}. For more information about licenses, please follow this link ${renderLicenseBadge(License)}`;
   }
   return "";
+}
+
+function renderEmail(Email){
+  return `[${Email}](Email: ${Email})`;
+}
+
+function renderGitHub(GitHub) {
+  return `[${GitHub}] (github.com/${GitHub})`;
 }
 
 //function to generate markdown for README
@@ -43,8 +52,28 @@ function generateMarkdown(data) {
   - [License](#License)
   - [Tests](#Tests)
   - [Questions](#Questions)
+
+  ## Installation
+
+  ${data.Installation}
   
-`;
+  ## Usage
+
+  ${data.Usage}
+
+  ## Contributions
+
+  ${data.Contributions}
+
+  ${renderLicenseSection(data.License)}
+
+  ## Tests
+
+  ${data.Tests}
+
+  ## Questions 
+
+  For questions regarding GitHub repositories from ${renderGitHub(data.GitHub)} or any additional questions, you can reach me at ${renderEmail(data.Email)}`;
 }
 
 module.exports = generateMarkdown;

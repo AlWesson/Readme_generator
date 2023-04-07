@@ -9,12 +9,6 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
     {
         type: 'input',
-        name: 'Name',
-        message: "Please enter your first and last name.",
-        default: "",
-    },
-    {
-        type: 'input',
         name: 'GitHub',
         message: "Please enter your GitHub user name.",
         default: "",
@@ -34,13 +28,13 @@ const questions = [
     {
         type: 'input',
         name: 'Description',
-        message: 'Give a description of your project. (N/A will ',
+        message: 'Give a description of your project. (N/A will be inserted if no description is input.)',
         default: "N/A",
     },
     {
         type: 'input',
         name: 'Usage',
-        message: 'How will your project be used? (N/A will be inserted of no usage is input.)',
+        message: 'How will your project be used? (N/A will be inserted if no usage is input.)',
         default: "N/A",
     },
     {
@@ -57,7 +51,7 @@ const questions = [
         default: "",
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'License',
         message: 'What license does your project have?',
         choices: ["MIT","APACHE 2.0","GNU AGPLv3", "GNU GPLv3", "GNU LGPLv3", "MPL 2.0", "Boost 1.0", "Unlicense"],
@@ -70,17 +64,17 @@ const questions = [
     }
 ];
 
-function write () {
-    fs.writeFile('README.md', fileRM, (err) => err ? console.log(err) :  console.log("Generating README..."));
+function write (fileRM) {
+    fs.writeFile('./generated_file/README.md', fileRM, (err) => err ? console.log(err) :  console.log("Generating README..."));
 };
-
-
 function init() {
     inquirer.prompt(questions).then((answers) => {
         const fileRM = generateMarkdown(answers);
-        write();
+        write(fileRM);
        
 });
+
+
 };
 // Function call to initialize app
 init();
