@@ -13,16 +13,17 @@ function renderLicenseBadge(License) {
 
 function renderLicenseLink(License) {
   if(License !== "Unlicense"){
-    return (`https://choosealicense.com/license/${License.toLowerCase()}`);
+    return `https://choosealicense.com/license/${License.toLowerCase()}`;
   }
   return "";
 }
 
+
 //function that returns the license section of README. If there is no license, return an empty string
-function renderLicenseSection(License, Name) {
+function renderLicenseSection(License) {
   if(License !== "Unlicense"){
     return `## License
-    Copyright (c) ${Nyear} ${Name}. For more information about licenses, please follow this link ${renderLicenseBadge(License)}`;
+    Copyright (c) ${Nyear}. For more information about licenses, please follow this link ${renderLicenseBadge(License)}`;
   }
   return "";
 }
@@ -32,7 +33,7 @@ function renderEmail(Email){
 }
 
 function renderGitHub(GitHub) {
-  return `[${GitHub}] (github.com/${GitHub})`;
+  return `[${GitHub}](https://github.com/${GitHub})`;
 }
 
 //function to generate markdown for README

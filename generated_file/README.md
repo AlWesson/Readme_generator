@@ -27,7 +27,7 @@
   none
 
   ## License
-    Copyright (c) 2023 undefined. For more information about licenses, please follow this link ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
+    Copyright (c) 2023. For more information about licenses, please follow this link ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
 
   ## Tests
 
@@ -35,4 +35,4 @@
 
   ## Questions 
 
-  For questions regarding GitHub repositories from [AlWesson] (github.com/AlWesson) or any additional questions, you can reach me at [awessonn@gmail.com](Email: awessonn@gmail.com)
+  For questions regarding GitHub repositories from [AlWesson](https://github.com/AlWesson) or any additional questions, you can reach me at [awessonn@gmail.com](Email: awessonn@gmail.com)
