@@ -35,4 +35,4 @@
 
   ## Questions 
 
-  For questions regarding GitHub repositories from [AlWesson](https://github.com/AlWesson) or any additional questions, you can reach me at [awessonn@gmail.com](Email: awessonn@gmail.com)
+  For questions regarding GitHub repositories from [AlWesson](https://github.com/AlWesson), or any additional questions, you can reach me at [awessonn@gmail.com]

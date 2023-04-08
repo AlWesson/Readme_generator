@@ -29,7 +29,7 @@ function renderLicenseSection(License) {
 }
 
 function renderEmail(Email){
-  return `[${Email}](Email: ${Email})`;
+  return `[${Email}]`;
 }
 
 function renderGitHub(GitHub) {
@@ -74,7 +74,7 @@ function generateMarkdown(data) {
 
   ## Questions 
 
-  For questions regarding GitHub repositories from ${renderGitHub(data.GitHub)} or any additional questions, you can reach me at ${renderEmail(data.Email)}`;
+  For questions regarding GitHub repositories from ${renderGitHub(data.GitHub)}, or any additional questions, you can reach me at ${renderEmail(data.Email)}`;
 }
 
 module.exports = generateMarkdown;
