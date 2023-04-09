@@ -2,6 +2,7 @@
 const Ndate = new Date();
 const Nyear = Ndate.getFullYear();
 
+// function to render the license badge onto the markdown file. 
 function renderLicenseBadge(License) {
   if(License !== "Unlicense") {
     return `![License](https://img.shields.io/badge/license-${License}-yellow.svg)`;
@@ -27,11 +28,11 @@ function renderLicenseSection(License) {
   }
   return "";
 }
-
+// function to render Email input from questions in index.js.
 function renderEmail(Email){
   return `${Email}`;
 }
-
+// function to render GitHub input from questions in index.js.
 function renderGitHub(GitHub) {
   return `[${GitHub}](https://github.com/${GitHub})`;
 }

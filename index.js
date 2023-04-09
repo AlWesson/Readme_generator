@@ -1,11 +1,15 @@
 
+// Allows for reading and creating files.
 const fs = require('fs');
+// Promise-based npm package for Node.js. Used for 'const questions' in this file.
 const inquirer = require('inquirer');
+// gets the file path to generateMarkdown, and loads it. 
 const generateMarkdown = require('./utils/generateMarkdown');
 
 
 
-
+// There are questions that'll be asked of the user to fill out the generated README.md. 
+// Areas left empty will be filled with an 'N/A' in the file.
 const questions = [
     {
         type: 'input',
@@ -63,10 +67,12 @@ const questions = [
         default: "N/A",
     }
 ];
-
+// writes the new file into the 'generated_file' folder.
 function write (fileRM) {
     fs.writeFile('./generated_file/README.md', fileRM, (err) => err ? console.log(err) :  console.log("Generating README..."));
 };
+
+// prompts the array of questions and gets the answers. Then uses the answers for generateMarkdown.js file and sends to write() function above. 
 function init() {
     inquirer.prompt(questions).then((answers) => {
         const fileRM = generateMarkdown(answers);
