@@ -1,10 +1,10 @@
-# Readme_Generator
+# Project_1
 
   ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
 
   ## Description
 
-  Readme_Generator allows users to create a README.md file simply by taking the input from the promps and creating a markdown file with the input. If no input is given, that area in the markdown file will be filled with an 'N/A'. The created file is then sent to the 'generated_file' folder.
+  Project 1 for example vid
 
   ## Table of Contents
   - [Installation](#Installation)
@@ -20,7 +20,7 @@
   
   ## Usage
 
-  The usage of this project is to create README.md files a quicker and easier process.
+  Create README.md file for example vid
 
   ## Contributions
 
@@ -29,8 +29,6 @@
   ## License
 
   This is under MIT, 2023. For more information, please go to: https://choosealicense.com/licenses/mit.
-
-  Demonstration link: https://drive.google.com/file/d/1Wcq-JGM5mBjYt5JbSWERDjzJXRRjZq-T/view
 
   ## Tests
 
