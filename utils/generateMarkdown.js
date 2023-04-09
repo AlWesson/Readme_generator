@@ -24,7 +24,7 @@ function renderLicenseLink(License) {
 function renderLicenseSection(License) {
   if(License !== "Unlicense"){
     return `## License
-    Copyright (c) ${Nyear}. For more information about licenses, please follow this link ${renderLicenseBadge(License)}`;
+    Copyright (c) ${Nyear}. For more information about licenses, please follow this link ${renderLicenseLink(License)}`;
   }
   return "";
 }
