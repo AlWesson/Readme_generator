@@ -1,4 +1,4 @@
-# Readme_Generator
+# Readme_generator
 
   ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
 
@@ -22,14 +22,15 @@
 
   The usage of this project is to create README.md files a quicker and easier process.
 
-  Demonstration link: (https://drive.google.com/file/d/1Wcq-JGM5mBjYt5JbSWERDjzJXRRjZq-T/view)
+  Demonstration link: https://drive.google.com/file/d/1Wcq-JGM5mBjYt5JbSWERDjzJXRRjZq-T/view
+
 
   ## Contributions
 
   N/A
 
   ## License
-    Copyright (c) 2023. For more information about licenses, please follow this link ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
+    Copyright (c) 2023. For more information about licenses, please follow this link https://choosealicense.com/license/mit
 
   ## Tests
 
