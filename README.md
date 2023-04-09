@@ -21,6 +21,8 @@
   ## Usage
 
   The usage of this project is to create README.md files a quicker and easier process.
+  
+  Demonstration link: https://drive.google.com/file/d/1Wcq-JGM5mBjYt5JbSWERDjzJXRRjZq-T/view
 
   ## Contributions
 
@@ -29,8 +31,6 @@
   ## License
 
   This is under MIT, 2023. For more information, please go to: https://choosealicense.com/licenses/mit.
-
-  Demonstration link: https://drive.google.com/file/d/1Wcq-JGM5mBjYt5JbSWERDjzJXRRjZq-T/view
 
   ## Tests
 
