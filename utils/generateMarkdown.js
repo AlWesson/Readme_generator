@@ -14,7 +14,7 @@ function renderLicenseBadge(License) {
 
 function renderLicenseLink(License) {
   if(License !== "Unlicense"){
-    return `\n [License](#License)\n`;
+    return `https://choosealicense.com/licenses/${License.toLowerCase()}`;
   }
   return "";
 }
@@ -24,7 +24,8 @@ function renderLicenseLink(License) {
 function renderLicenseSection(License) {
   if(License !== "Unlicense"){
     return `## License
-    Copyright (c) ${Nyear}. For more information about this licenses, please follow this link: ${renderLicenseLink(License)}`;
+
+    This is under ${License}, ${Nyear}. For more information, please follow this link: ${renderLicenseLink(License)}.`;
   }
   return "";
 }

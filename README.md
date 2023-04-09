@@ -29,9 +29,8 @@
   N/A
 
   ## License
-    Copyright (c) 2023. For more information about this licenses, please follow this link: 
- [License](#License)
 
+    This is under MIT, 2023. For more information, please follow this link: https://choosealicense.com/licenses/mit.
 
   ## Tests
 
