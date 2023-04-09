@@ -29,7 +29,7 @@ function renderLicenseSection(License) {
 }
 
 function renderEmail(Email){
-  return `[${Email}]`;
+  return `${Email}`;
 }
 
 function renderGitHub(GitHub) {
