@@ -52,7 +52,7 @@ const questions = [
         type: 'input',
         name: 'Contributions',
         message: 'List any contributions to the project using GitHub user names.',
-        default: "",
+        default: "N/A",
     },
     {
         type: 'list',
