@@ -14,7 +14,7 @@ function renderLicenseBadge(License) {
 
 function renderLicenseLink(License) {
   if(License !== "Unlicense"){
-    return `https://choosealicense.com/license/${License.toLowerCase()}`;
+    return `[License](https://choosealicense.com/license/${License.toLowerCase()})`;
   }
   return "";
 }
